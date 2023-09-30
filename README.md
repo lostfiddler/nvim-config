@@ -14,7 +14,7 @@ Requires Neovim version 0.8.0+
 >
 > ~/AppData/Local (Windows)
 ```
-git clone https://github.com/lostfiddler/neovim-config.git nvim
+git clone --branch pi https://github.com/lostfiddler/neovim-config.git nvim
 ```
 
 2. Install [packer.nvim](https://github.com/wbthomason/packer.nvim)
