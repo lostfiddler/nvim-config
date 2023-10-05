@@ -16,3 +16,4 @@ vim.opt.incsearch = true
 vim.opt.scrolloff = 4
 
 vim.opt.guicursor = 'a:blinkwait700-blinkon400-blinkoff250,i:ver10'
+vim.opt.signcolumn = 'number'
