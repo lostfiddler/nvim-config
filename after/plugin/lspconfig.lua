@@ -4,6 +4,7 @@ lspconfig.tsserver.setup {}
 lspconfig.cssls.setup {}
 lspconfig.html.setup {}
 lspconfig.clangd.setup {}
+lspconfig.lua_ls.setup { cmd = {'/home/ian/.local/lua-language-server/bin/lua-language-server'}}
 
 vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
     vim.lsp.diagnostic.on_publish_diagnostics, {
