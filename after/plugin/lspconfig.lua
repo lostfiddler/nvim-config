@@ -1,3 +1,5 @@
+require('neodev').setup({})
+
 -- Setup language servers
 local lspconfig = require('lspconfig')
 lspconfig.tsserver.setup {}
@@ -5,6 +7,9 @@ lspconfig.cssls.setup {}
 lspconfig.html.setup {}
 lspconfig.clangd.setup {}
 lspconfig.lua_ls.setup { cmd = {'/home/ian/.local/lua-language-server/bin/lua-language-server'}}
+lspconfig.bashls.setup {}
+lspconfig.awk_ls.setup {}
+lspconfig.gopls.setup {}
 
 vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
     vim.lsp.diagnostic.on_publish_diagnostics, {
@@ -16,8 +21,6 @@ vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
 
 -- Add additional capabilities supported by nvim-cmp
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
-local lspconfig = require('lspconfig')
 
 -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
 local servers = { 'clangd', 'cssls', 'html', 'tsserver', 'texlab' }

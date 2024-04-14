@@ -1,1 +1,2 @@
-vim.keymap.set('n', '<leader>fx', vim.lsp.buf.code_action, {})
+vim.g.mapleader = " "
+vim.keymap.set('n', '<leader>ex', '<cmd>Lexplore<cr>')

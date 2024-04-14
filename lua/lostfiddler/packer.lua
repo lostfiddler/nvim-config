@@ -8,10 +8,13 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   use {
-      'nvim-telescope/telescope.nvim', tag = '0.1.1',
+      'nvim-telescope/telescope.nvim', tag = '0.1.x',
       -- or                            , branch = '0.1.x',
       requires = { {'nvim-lua/plenary.nvim'} }
   }
+
+  use 'junegunn/fzf'
+  use 'junegunn/fzf.vim'
 
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
@@ -19,5 +22,50 @@ return require('packer').startup(function(use)
   use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
   use 'L3MON4D3/LuaSnip' -- Snippets plugin
 
-  use 'sbdchd/neoformat' -- formatter
+  use 'folke/neodev.nvim' -- Configure lua-language-server for neovim config
+
+  use 'sbdchd/neoformat' -- Formatter
+
+  use 'nvim-tree/nvim-web-devicons' -- Icons
+
+  use {
+      'nvimdev/dashboard-nvim',
+      event = 'VimEnter',
+      config = function()
+          require('dashboard').setup {
+              -- config
+              theme = 'hyper',
+              disable_move = true,
+              config = {
+                  header = require("lostfiddler.dashboard_header")
+              }
+          }
+      end,
+      requires = {'nvim-tree/nvim-web-devicons'}
+  }
+
+  use {
+      'folke/which-key.nvim',
+      config = function()
+          vim.o.timeout = true
+          vim.o.timeoutlen = 300
+          require('which-key').setup {
+              -- your configuration comes here
+              -- or leave it empty to use the default settings
+              -- refer to the configuration section below
+          }
+      end
+  }
+
+  -- file explorer
+  use {
+      'stevearc/oil.nvim',
+      config = function()
+          require('oil').setup()
+      end,
+  }
+
+  -- color-schemes
+  use 'ellisonleao/gruvbox.nvim'
+  use 'catppuccin/nvim'
 end)
