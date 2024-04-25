@@ -20,3 +20,9 @@ vim.opt.guicursor = 'a:blinkwait700-blinkon400-blinkoff250,i:ver10'
 vim.opt.signcolumn = 'number'
 
 vim.opt.fillchars = 'eob: '
+
+vim.api.nvim_set_keymap('i', "'", "''<left>", {noremap = true})
+vim.api.nvim_set_keymap('i', '"', '""<left>', {noremap = true})
+vim.api.nvim_set_keymap('i', '(', '()<left>', {noremap = true})
+vim.api.nvim_set_keymap('i', '[', '[]<left>', {noremap = true})
+vim.api.nvim_set_keymap('i', '{', '{}<left>', {noremap = true})

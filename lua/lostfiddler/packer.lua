@@ -65,6 +65,8 @@ return require('packer').startup(function(use)
       end,
   }
 
+  use 'alvan/vim-closetag'
+
   -- color-schemes
   use 'ellisonleao/gruvbox.nvim'
   use 'catppuccin/nvim'
