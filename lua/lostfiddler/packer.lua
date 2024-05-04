@@ -57,15 +57,16 @@ return require('packer').startup(function(use)
       end
   }
 
-  -- file explorer
-  use {
-      'stevearc/oil.nvim',
-      config = function()
-          require('oil').setup()
-      end,
-  }
-
   use 'alvan/vim-closetag'
+  use({
+    "kylechui/nvim-surround",
+    config = function()
+        require("nvim-surround").setup({
+            -- Configuration here, or leave empty to use defaults
+        })
+    end
+})
+use 'Raimondi/delimitMate'
 
   -- color-schemes
   use 'ellisonleao/gruvbox.nvim'
