@@ -2,6 +2,7 @@
 vim.g.mapleader = " "
 vim.keymap.set('n', '<leader>ex', '<cmd>Explore<cr>')
 vim.keymap.set('n', '<leader>sc', ':setlocal spell spelllang=en_us<cr>')
+vim.keymap.set('n', '<s-cr>', 'o<esc>')
 
 
 -- Insert mode remappings --

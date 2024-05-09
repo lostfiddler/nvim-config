@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/ian/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["auto-pairs"] = {
+    loaded = true,
+    path = "/home/ian/.local/share/nvim/site/pack/packer/start/auto-pairs",
+    url = "https://github.com/jiangmiao/auto-pairs"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/ian/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -90,17 +95,12 @@ _G.packer_plugins = {
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["dashboard-nvim"] = {
-    config = { "\27LJ\2\n®\1\0\0\a\0\b\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0006\4\0\0'\6\4\0B\4\2\2=\4\6\3=\3\a\2B\0\2\1K\0\1\0\vconfig\vheader\1\0\1\vheader\0!lostfiddler.dashboard_header\1\0\3\17disable_move\2\vconfig\0\ntheme\nhyper\nsetup\14dashboard\frequire\0" },
+    config = { "\27LJ\2\n®\1\0\0\a\0\b\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0006\4\0\0'\6\4\0B\4\2\2=\4\6\3=\3\a\2B\0\2\1K\0\1\0\vconfig\vheader\1\0\1\vheader\0!lostfiddler.dashboard_header\1\0\3\17disable_move\2\ntheme\nhyper\vconfig\0\nsetup\14dashboard\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
     path = "/home/ian/.local/share/nvim/site/pack/packer/opt/dashboard-nvim",
     url = "https://github.com/nvimdev/dashboard-nvim"
-  },
-  delimitMate = {
-    loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/delimitMate",
-    url = "https://github.com/Raimondi/delimitMate"
   },
   fzf = {
     loaded = true,

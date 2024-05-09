@@ -57,7 +57,7 @@ return require('packer').startup(function(use)
       end
   }
 
-  use 'alvan/vim-closetag'
+  use 'alvan/vim-closetag' -- autocomplete X(HTML) tags
   use({
     "kylechui/nvim-surround",
     config = function()
@@ -66,7 +66,7 @@ return require('packer').startup(function(use)
         })
     end
 })
-use 'Raimondi/delimitMate'
+use 'jiangmiao/auto-pairs' -- autocomplete insert mode quotes, parans, brackets, etc...
 
   -- color-schemes
   use 'ellisonleao/gruvbox.nvim'
