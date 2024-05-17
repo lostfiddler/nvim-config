@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/ian/.cache/nvim/packer_hererocks/2.1.1707061634/share/lua/5.1/?.lua;/home/ian/.cache/nvim/packer_hererocks/2.1.1707061634/share/lua/5.1/?/init.lua;/home/ian/.cache/nvim/packer_hererocks/2.1.1707061634/lib/luarocks/rocks-5.1/?.lua;/home/ian/.cache/nvim/packer_hererocks/2.1.1707061634/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/ian/.cache/nvim/packer_hererocks/2.1.1707061634/lib/lua/5.1/?.so"
+local package_path_str = "C:\\Users\\doof1\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1703942320\\share\\lua\\5.1\\?.lua;C:\\Users\\doof1\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1703942320\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\doof1\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1703942320\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\doof1\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1703942320\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
+local install_cpath_pattern = "C:\\Users\\doof1\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1703942320\\lib\\lua\\5.1\\?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,107 +76,107 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   LuaSnip = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    path = "C:\\Users\\doof1\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["auto-pairs"] = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/auto-pairs",
+    path = "C:\\Users\\doof1\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\auto-pairs",
     url = "https://github.com/jiangmiao/auto-pairs"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    path = "C:\\Users\\doof1\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   cmp_luasnip = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    path = "C:\\Users\\doof1\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["dashboard-nvim"] = {
-    config = { "\27LJ\2\n®\1\0\0\a\0\b\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0006\4\0\0'\6\4\0B\4\2\2=\4\6\3=\3\a\2B\0\2\1K\0\1\0\vconfig\vheader\1\0\1\vheader\0!lostfiddler.dashboard_header\1\0\3\17disable_move\2\ntheme\nhyper\vconfig\0\nsetup\14dashboard\frequire\0" },
+    config = { "\27LJ\2\nž\1\0\0\a\0\b\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0006\4\0\0'\6\4\0B\4\2\2=\4\6\3=\3\a\2B\0\2\1K\0\1\0\vconfig\vheader\1\0\0!lostfiddler.dashboard_header\1\0\2\ntheme\nhyper\17disable_move\2\nsetup\14dashboard\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/opt/dashboard-nvim",
+    path = "C:\\Users\\doof1\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\dashboard-nvim",
     url = "https://github.com/nvimdev/dashboard-nvim"
   },
   fzf = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/fzf",
+    path = "C:\\Users\\doof1\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fzf",
     url = "https://github.com/junegunn/fzf"
   },
   ["fzf.vim"] = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/fzf.vim",
+    path = "C:\\Users\\doof1\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fzf.vim",
     url = "https://github.com/junegunn/fzf.vim"
   },
   ["gruvbox.nvim"] = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    path = "C:\\Users\\doof1\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
   ["neodev.nvim"] = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/neodev.nvim",
+    path = "C:\\Users\\doof1\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neodev.nvim",
     url = "https://github.com/folke/neodev.nvim"
   },
   neoformat = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/neoformat",
+    path = "C:\\Users\\doof1\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neoformat",
     url = "https://github.com/sbdchd/neoformat"
   },
   nvim = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/nvim",
+    path = "C:\\Users\\doof1\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim",
     url = "https://github.com/catppuccin/nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    path = "C:\\Users\\doof1\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "C:\\Users\\doof1\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-surround"] = {
     config = { "\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0" },
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/nvim-surround",
+    path = "C:\\Users\\doof1\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-surround",
     url = "https://github.com/kylechui/nvim-surround"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "C:\\Users\\doof1\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "C:\\Users\\doof1\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "C:\\Users\\doof1\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "C:\\Users\\doof1\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-closetag"] = {
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/vim-closetag",
+    path = "C:\\Users\\doof1\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-closetag",
     url = "https://github.com/alvan/vim-closetag"
   },
   ["which-key.nvim"] = {
     config = { "\27LJ\2\nt\0\0\3\0\a\0\0156\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0)\1,\1=\1\3\0006\0\4\0'\2\5\0B\0\2\0029\0\6\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\15timeoutlen\ftimeout\6o\bvim\0" },
     loaded = true,
-    path = "/home/ian/.local/share/nvim/site/pack/packer/start/which-key.nvim",
+    path = "C:\\Users\\doof1\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\which-key.nvim",
     url = "https://github.com/folke/which-key.nvim"
   }
 }
