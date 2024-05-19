@@ -66,14 +66,13 @@ return require('packer').startup(function(use)
             })
         end
     })
-    use 'jiangmiao/auto-pairs' -- autocomplete insert mode quotes, parans, brackets, etc...
+    use 'echasnovski/mini.nvim' -- autocomplete insert mode quotes, parans, brackets, etc...
 
     -- color-schemes
     use 'ellisonleao/gruvbox.nvim'
     use 'catppuccin/nvim'
 
     use 'nvim-treesitter/nvim-treesitter'
-    
     use({
         'MeanderingProgrammer/markdown.nvim',
         after = {'nvim-treesitter'},
