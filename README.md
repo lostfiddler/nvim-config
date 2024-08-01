@@ -37,6 +37,8 @@ go install golang.org/x/tools/gopls@latest
 ```
 > if on linux/mac, can also use ur ususal package manager
 - c
+
+
 [clangd](https://clangd.llvm.org/installation)
 - lua
 > windows
