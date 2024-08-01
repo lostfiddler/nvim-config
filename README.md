@@ -25,19 +25,20 @@ git clone https://github.com/lostfiddler/neovim-config.git nvim
 :PackerSync
 ```
 
-4. Install [servers](https://microsoft.github.io/language-server-protocol/implementors/servers/) for LSP. Type `:help lspconfig` command in nvim for detail
-[TS, JS, CSS, HTML]
+4. Install [servers](https://microsoft.github.io/language-server-protocol/implementors/servers/) for LSP. Type `:help lspconfig` command in nvim for details
+
+- TS, JS, CSS, HTML
 ```
 npm install -g typescript-language-server typescript
 ```
-[go]
+- go
 ```
 go install golang.org/x/tools/gopls@latest
 ```
 > if on linux/mac, can also use ur ususal package manager
-[c]
+- c
 [clangd](https://clangd.llvm.org/installation)
-[lua]
+- lua
 > windows
 ```
 scoop install lua-language-server
@@ -46,7 +47,7 @@ scoop install lua-language-server
 ```
 brew install lua-language-server
 ```
-[bash]
+- bash
 ```
 npm i -g bash-language-server  
 ```
