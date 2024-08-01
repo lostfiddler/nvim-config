@@ -1,6 +1,6 @@
 require('zen-mode').setup({
     window = {
-        width = 100
+        width = 90
     },
     on_open = function()
         vim.fn.system('tmux set-option -g status off')

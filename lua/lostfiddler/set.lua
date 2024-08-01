@@ -14,7 +14,7 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 vim.opt.scrolloff = 4
-vim.opt.textwidth = 100
+vim.opt.textwidth = 79
 
 vim.opt.termguicolors = true
 vim.opt.guicursor = 'a:blinkwait700-blinkon400-blinkoff250,i:ver10'
