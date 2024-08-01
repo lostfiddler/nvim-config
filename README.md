@@ -14,7 +14,7 @@ Requires Neovim version 0.8.0+
 >
 > ~/AppData/Local (Windows)
 ```
-git clone --branch pi https://github.com/lostfiddler/neovim-config.git nvim
+git clone https://github.com/lostfiddler/neovim-config.git nvim
 ```
 
 2. Install [packer.nvim](https://github.com/wbthomason/packer.nvim)
@@ -25,4 +25,28 @@ git clone --branch pi https://github.com/lostfiddler/neovim-config.git nvim
 :PackerSync
 ```
 
-4. Install [servers](https://microsoft.github.io/language-server-protocol/implementors/servers/) for LSP. Type `:help lspconfig` command in nvim for details
+4. Install [servers](https://microsoft.github.io/language-server-protocol/implementors/servers/) for LSP. Type `:help lspconfig` command in nvim for detail
+[TS, JS, CSS, HTML]
+```
+npm install -g typescript-language-server typescript
+```
+[go]
+```
+go install golang.org/x/tools/gopls@latest
+```
+> if on linux/mac, can also use ur ususal package manager
+[c]
+[clangd](https://clangd.llvm.org/installation)
+[lua]
+> windows
+```
+scoop install lua-language-server
+```
+> linux/mac
+```
+brew install lua-language-server
+```
+[bash]
+```
+npm i -g bash-language-server  
+```
