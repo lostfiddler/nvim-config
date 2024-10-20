@@ -29,7 +29,7 @@ git clone https://github.com/lostfiddler/neovim-config.git nvim
 
 - TS, JS, CSS, HTML
 ```
-npm install -g typescript-language-server typescript
+npm install -g typescript-language-server typescript vscode-langservers-extracted
 ```
 - go
 ```
