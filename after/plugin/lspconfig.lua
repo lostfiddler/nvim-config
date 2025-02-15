@@ -7,7 +7,9 @@ lspconfig.cssls.setup {}
 lspconfig.html.setup {}
 lspconfig.clangd.setup {}
 lspconfig.lua_ls.setup {}
-lspconfig.bashls.setup {}
+lspconfig.bashls.setup {
+    filetypes = {"bash", "sh", "mybash_config"}
+}
 lspconfig.awk_ls.setup {}
 lspconfig.gopls.setup {}
 

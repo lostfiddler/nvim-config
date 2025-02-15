@@ -23,3 +23,12 @@ vim.opt.signcolumn = 'number'
 vim.opt.fillchars = 'eob: '
 
 vim.cmd('autocmd TermOpen * setlocal nonumber norelativenumber')
+
+vim.filetype.add({
+    filename = {[".mybash_config"] = "mybash_config"}
+})
+
+vim.api.nvim_create_autocmd({"BufNewFile", "BufRead"}, {
+  pattern = "*.mybash_config",  -- Match your custom file extension
+  command = "setfiletype bash",   -- Set the filetype to 'bash'
+})
