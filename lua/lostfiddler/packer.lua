@@ -87,13 +87,13 @@ return require('packer').startup(function(use)
     use 'catppuccin/nvim'
 
     use 'nvim-treesitter/nvim-treesitter'
-    use({
-        'MeanderingProgrammer/markdown.nvim',
-        after = {'nvim-treesitter'},
-        config = function()
-            require('render-markdown').setup({})
-        end,
-    })
+    -- use({
+    --     'MeanderingProgrammer/markdown.nvim',
+    --     after = {'nvim-treesitter'},
+    --     config = function()
+    --         require('render-markdown').setup({})
+    --     end,
+    -- })
     use 'folke/zen-mode.nvim'
 
     use 'norcalli/nvim-colorizer.lua'
