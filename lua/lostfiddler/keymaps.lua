@@ -9,3 +9,7 @@ vim.keymap.set('n', 'tn', '<cmd>tabnew<cr>')
 vim.keymap.set('n', '<c-j>', '<cmd>m .+1<cr>')
 vim.keymap.set('n', '<c-k>', '<cmd>m .-2<cr>')
 vim.keymap.set('n', '<leader>cd', '<cmd>cd %:p:h<cr>:pwd<cr>') -- change directory to that of current file
+vim.keymap.set('n', '<leader>;', 'q:') -- open command history window
+
+vim.keymap.set('c', '<c-k>', '<up>')
+vim.keymap.set('c', '<c-j>', '<down>')
