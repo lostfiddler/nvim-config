@@ -1,23 +1,26 @@
 require('neodev').setup({})
 
 -- Setup language servers
-local lspconfig = require('lspconfig')
-lspconfig.ts_ls.setup {}
-lspconfig.cssls.setup {}
-lspconfig.html.setup {}
-lspconfig.clangd.setup {}
-lspconfig.lua_ls.setup {}
-lspconfig.bashls.setup {
-    filetypes = {"bash", "sh", "mybash_config"}
-}
-lspconfig.awk_ls.setup {}
-lspconfig.gopls.setup {}
+vim.lsp.config('ts_ls', {})
+vim.lsp.config('cssls', {})
+vim.lsp.config('html', {})
+vim.lsp.config('clangd', {})
+vim.lsp.config('lua_ls', {})
+vim.lsp.config('gopls', {})
 
 vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
     vim.lsp.diagnostic.on_publish_diagnostics, {
         update_in_insert = true,
     }
 )
+vim.lsp.enable({
+    'ts_ls',
+    'cssls',
+    'html',
+    'clangd',
+    'lua_ls',
+    'gopls'
+})
 -- -----------------------------------------------------------------
 -- nvim-cmp setup for autocomplete
 
@@ -26,12 +29,6 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
 local servers = { 'clangd', 'cssls', 'html', 'ts_ls', 'texlab' }
-for _, lsp in ipairs(servers) do
-  lspconfig[lsp].setup {
-    -- on_attach = my_custom_on_attach,
-    capabilities = capabilities,
-  }
-end
 
 -- luasnip setup
 local luasnip = require 'luasnip'

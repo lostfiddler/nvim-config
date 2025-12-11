@@ -34,3 +34,9 @@ vim.api.nvim_create_autocmd({"BufNewFile", "BufRead"}, {
   pattern = "*.mybash_config",  -- Match your custom file extension
   command = "setfiletype bash",   -- Set the filetype to 'bash'
 })
+
+vim.opt.shell = 'powershell.exe'
+vim.opt.shellslash = false
+vim.opt.shellxquote = ''
+vim.opt.shellcmdflag = '-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command'
+vim.opt.shellredir = '2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode'

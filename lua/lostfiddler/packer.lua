@@ -13,6 +13,8 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
+    use 'tpope/vim-fugitive'
+
     use 'junegunn/fzf'
     use 'junegunn/fzf.vim'
 
@@ -27,35 +29,6 @@ return require('packer').startup(function(use)
     use 'sbdchd/neoformat' -- Formatter
 
     use 'nvim-tree/nvim-web-devicons' -- Icons
-
-    use {
-        'nvimdev/dashboard-nvim',
-        event = 'VimEnter',
-        config = function()
-            require('dashboard').setup {
-                -- config
-                theme = 'hyper',
-                disable_move = true,
-                config = {
-                    header = require("lostfiddler.dashboard_header")
-                }
-            }
-        end,
-        requires = {'nvim-tree/nvim-web-devicons'}
-    }
-
-    use {
-        'folke/which-key.nvim',
-        config = function()
-            vim.o.timeout = true
-            vim.o.timeoutlen = 300
-            require('which-key').setup {
-                -- your configuration comes here
-                -- or leave it empty to use the default settings
-                -- refer to the configuration section below
-            }
-        end
-    }
 
     use {
         'nvim-lualine/lualine.nvim',
@@ -87,16 +60,6 @@ return require('packer').startup(function(use)
     use 'catppuccin/nvim'
 
     use 'nvim-treesitter/nvim-treesitter'
-    -- use({
-    --     'MeanderingProgrammer/markdown.nvim',
-    --     after = {'nvim-treesitter'},
-    --     config = function()
-    --         require('render-markdown').setup({})
-    --     end,
-    -- })
-    use 'folke/zen-mode.nvim'
 
     use 'norcalli/nvim-colorizer.lua'
-
-    use 'tris203/precognition.nvim'
 end)
