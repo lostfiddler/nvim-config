@@ -14,6 +14,8 @@ return {
       local telescope = require('telescope')
       local actions = require('telescope.actions')
 
+      vim.api.nvim_set_hl(0, 'TelescopeTitle', {fg = 'violet', bg = 'blue'})
+
       telescope.setup({
         defaults = {
           initial_mode = 'insert',
@@ -32,4 +34,3 @@ return {
     end,
   },
 }
-
