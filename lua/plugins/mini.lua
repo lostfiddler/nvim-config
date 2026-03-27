@@ -2,6 +2,6 @@ return {
     'nvim-mini/mini.nvim',
     config = function()
         require('mini.pairs').setup({})
-        require('mini.cmdline').setup({})
+        -- require('mini.cmdline').setup({})
     end
 }
