@@ -41,7 +41,7 @@ return {
             validate = { enable = true },
             schemas = {
               { fileMatch = { "package.json" }, url = "https://schemastore.org/package.json" },
-              { fileMatch = { "tsopts.json" }, url = "https://schemastore.org/tsopts.json" },
+              { fileMatch = { "tsconfig.json" }, url = "https://schemastore.org/tsconfig.json" },
             },
           },
         }
