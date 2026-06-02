@@ -37,10 +37,7 @@ vim.filetype.add({
     filename = {[".mybash_config"] = "mybash_config"}
 })
 
-vim.api.nvim_create_autocmd({"BufNewFile", "BufRead"}, {
-  pattern = "*.mybash_config",  -- Match your custom file extension
-  command = "setfiletype bash",   -- Set the filetype to 'bash'
-})
+vim.g.bash_is_sh = 1
 
 if vim.uv.os_uname().sysname:find("Windows") then
 

@@ -1,17 +1,11 @@
 return {
   "neovim/nvim-lspconfig",
   dependencies = {
-    "williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim",
     "folke/lazydev.nvim",
     "saghen/blink.cmp",
   },
   config = function()
     require("lazydev").setup({})
-    require("mason").setup()
-    require("mason-lspconfig").setup({
-      ensure_installed = { "ts_ls", "cssls", "html", "clangd", "lua_ls", "csharp_ls", "jsonls" },
-    })
 
     vim.diagnostic.config({ virtual_text = false })
     vim.o.updatetime = 250
@@ -19,7 +13,7 @@ return {
 
     -- Use the new native config system
     local capabilities = require("blink.cmp").get_lsp_capabilities()
-    local servers = { "ts_ls", "cssls", "html", "clangd", "lua_ls", "csharp_ls", "jsonls" }
+    local servers = { "ts_ls", "cssls", "html", "clangd", "lua_ls", "csharp_ls", "jsonls", "bashlsl" }
 
     for _, server_name in ipairs(servers) do
       local opts = {
