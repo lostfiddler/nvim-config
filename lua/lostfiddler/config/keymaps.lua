@@ -14,3 +14,4 @@ vim.keymap.set('n', '<leader>o', ':b#<cr>', {desc = 'Switch to previous buffer'}
 
 vim.keymap.set('c', '<c-k>', '<up>')
 vim.keymap.set('c', '<c-j>', '<down>')
+vim.keymap.set('n', '<C-]>', vim.lsp.buf.definition, {desc = "LSP Definition (replaces ctags)"})
